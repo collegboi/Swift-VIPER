@@ -31,7 +31,7 @@ class ___VARIABLE_ModuleName___Router {
 
         interactor.output = presenter
         
-        router.view = view
+        router.viewController = view
 
         //return navigation
 
