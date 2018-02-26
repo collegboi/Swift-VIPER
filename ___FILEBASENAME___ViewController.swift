@@ -23,7 +23,7 @@ class ___VARIABLE_ModuleName___ViewController: UIViewController {
         self.setupView()
         presenter?.viewDidLoad()
     }
-    override func viewDidAppeaar() {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidLoad()
         presenter?.viewDidAppeaar()
     }
