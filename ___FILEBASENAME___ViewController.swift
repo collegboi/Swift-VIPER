@@ -12,7 +12,7 @@ import UIKit
 class ___VARIABLE_ModuleName___ViewController: UIViewController {
 
     // MARK: IBOutlets
-    
+
 
     // MARK: Properties
     var presenter: ___VARIABLE_ModuleName___Presentation?
@@ -21,11 +21,11 @@ class ___VARIABLE_ModuleName___ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
-        presenter.viewDidLoad()
+        presenter?.viewDidLoad()
     }
     override func viewDidAppeaar() {
         super.viewDidLoad()
-        presenter.viewDidAppeaar()
+        presenter?.viewDidAppeaar()
     }
 
     private func setupView() {
