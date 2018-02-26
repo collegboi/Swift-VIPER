@@ -13,6 +13,8 @@ protocol ___VARIABLE_ModuleName___View {
 }
 
 protocol ___VARIABLE_ModuleName___Presentation: class {
+    func viewDidLoad()
+    func viewDidAppear()
     // TODO: Declare presentation methods
 }
 

@@ -12,28 +12,30 @@ import UIKit
 class ___VARIABLE_ModuleName___Router {
 
     // MARK: Properties
-
-    weak var view: UIViewController?
+    weak var viewController: UIViewController?
 
     // MARK: Static methods
-
     static func assembleModule() -> ___VARIABLE_ModuleName___ViewController {
-        let viewController = UIStoryboard.loadViewController() as ___VARIABLE_ModuleName___ViewController
+        let view = UIStoryboard.loadViewController() as ___VARIABLE_ModuleName___ViewController
         let presenter = ___VARIABLE_ModuleName___Presenter()
         let router = ___VARIABLE_ModuleName___Router()
         let interactor = ___VARIABLE_ModuleName___Interactor()
 
-        viewController.presenter =  presenter
+        //let navigation = UINavigationController(rootViewController: view!)
 
-        presenter.view = viewController
+        view?.presenter =  presenter
+
+        presenter.view = view
         presenter.router = router
         presenter.interactor = interactor
 
-        router.view = viewController
-
         interactor.output = presenter
+        
+        router.view = view
 
-        return viewController
+        //return navigation
+
+        return view!
     }
 }
 
